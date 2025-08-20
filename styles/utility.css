@@ -1,0 +1,37 @@
+.content-tag {
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  background-color: var(--brand-color-dark);
+  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25);
+  color: var(--text-color-primary);
+}
+
+.flex {
+  display: flex;
+}
+.grid{
+  display: grid;
+}
+.itens-center {
+  align-items: center;
+}
+
+.gap-\.5{
+  gap: .5rem;
+}
+
+.container{
+  --pp-inline: 1rem;
+   --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--pp-inline) * 2);
+  margin-inline: auto;
+}
+
+@media (width >= 80em) {
+  .container{
+    --pp-inline: 1.25rem;
+    --max-width:80em;
+  }
+}
+

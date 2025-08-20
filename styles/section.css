@@ -1,0 +1,9 @@
+#destaques{
+  & .noticia-01{
+    & img{
+      
+      height: 26rem;
+      object-fit: cover;
+    }
+  }
+}
