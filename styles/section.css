@@ -1,7 +1,7 @@
-#destaques{
-  & .noticia-01{
-    & img{
-      
+#destaques {
+  & .noticia-01 {
+    & img {
+      width: var(--max-width);
       height: 26rem;
       object-fit: cover;
     }
