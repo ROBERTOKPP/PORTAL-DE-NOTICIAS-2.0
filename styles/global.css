@@ -18,8 +18,24 @@
   --heading2: 800 1rem/1.4 var(--ff-Archivo);
   --heading3: 800 0.875rem/1.4 var(--ff-Archivo);
   --span: 600 0.875rem/1.45 var(--ff-Archivo);
-  --heading1: 400 0.875rem/1.6 var(--ff-Archivo);
+  --ff-p: 400 0.875rem/1.6 var(--ff-Archivo);
 }
+
+h1{
+  font: var(--heading1);
+  color: var(--text-color-primary);
+}
+h2{
+  font: var(--heading2);
+  color: var(--text-color-primary);
+}
+
+h3{
+  font: var(--heading3);
+  color: var(--text-color-primary);
+}
+
+
 body {
   background-color: var(--bg-color);
   font-family: var(--ff-Archivo);

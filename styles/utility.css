@@ -21,6 +21,11 @@
   gap: 0.5rem;
 }
 
+.gap-\.25 {
+  gap: 0.25rem;
+}
+
+
 .container {
   --pp-inline: 1rem;
   --max-width: 375px;
@@ -30,7 +35,8 @@
 
 @media (width >= 80em) {
   .container {
-    --pp-inline: 1.25rem;
+    --pp-inline: 2rem;
     --max-width: 80em;
+     width: min(var(--max-width), 100% - var(--pp-inline) * 2);
   }
 }
