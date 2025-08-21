@@ -22,6 +22,9 @@
 }
 body {
   background-color: var(--bg-color);
+  font-family: var(--ff-Archivo);
+  color: var(--text-color-primary);
+  
 }
 
 a {

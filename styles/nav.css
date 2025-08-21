@@ -1,6 +1,5 @@
 #navbar-primary {
-  padding: 1rem;
-
+  padding-block: 1rem;
   & > div {
     justify-content: space-between;
   }
@@ -12,13 +11,36 @@
   }
 }
 
+#navbar-secondary {
+  border-block: 1px solid var(--stroke-color);
+  white-space: nowrap;
+  padding-block: 0.875rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  gap: 2rem;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @media (width >= 80em) {
   #navbar-primary {
-    padding: 2rem;
-    & div:has(a) {
+   & div:has(a) {
     & a {
       display: initial;
     }
   }
+  }
+  #navbar-secondary {
+    justify-content: space-around;
+    & a {
+      &::after {
+        content:"";
+        border: solid red;
+        width: 3rem;
+        height: 3rem;
+      }
+    }
   }
 }
