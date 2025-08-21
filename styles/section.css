@@ -57,7 +57,18 @@
     }
     & span {
       display: inline-block;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media (width >= 80em) {
+  #destaques {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    & .noticias{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
     }
   }
 }

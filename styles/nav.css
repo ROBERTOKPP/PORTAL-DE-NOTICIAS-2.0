@@ -31,16 +31,9 @@
       display: initial;
     }
   }
+  
   }
   #navbar-secondary {
     justify-content: space-around;
-    & a {
-      &::after {
-        content:"";
-        border: solid red;
-        width: 3rem;
-        height: 3rem;
-      }
-    }
   }
 }
