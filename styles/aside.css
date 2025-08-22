@@ -1,0 +1,14 @@
+#aside {
+  padding-bottom: 2.5rem;
+  figure {
+    height: 4.5rem;
+    overflow: hidden;
+    span {
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+  }
+  & img {
+    object-fit: cover;
+  }
+}

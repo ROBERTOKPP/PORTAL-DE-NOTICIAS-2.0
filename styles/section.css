@@ -63,34 +63,6 @@
   }
 }
 
-@media (width >= 80em) {
-  #destaques {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    & .noticia-01 {
-      /* &::before{
-        width: 38rem;
-      } */
-      & img {
-        width: 38rem;
-      }
-    }
-
-    & .noticias {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      & figure {
-        width: 18rem;
-      }
-      & img {
-        width: 18rem;
-        height: 12.5rem;
-      }
-    }
-  }
-}
-
 #mais-lidas {
   & figure {
     flex-direction: column;
@@ -146,5 +118,33 @@
     top: 0;
     right: 0;
     margin: .5rem;
+  }
+}
+
+@media (width >= 80em) {
+  #destaques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    & .noticia-01 {
+      /* &::before{
+        width: 38rem;
+      } */
+      & img {
+        width: 38rem;
+      }
+    }
+
+    & .noticias {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      & figure {
+        width: 18rem;
+      }
+      & img {
+        width: 18rem;
+        height: 12.5rem;
+      }
+    }
   }
 }
