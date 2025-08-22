@@ -1,14 +1,15 @@
 .content-tag {
   text-transform: uppercase;
   border-radius: 0.25rem;
-  padding: 0.5rem;
+  padding-inline: 0.5rem;
+
   background-color: var(--brand-color-dark);
   box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25);
   color: var(--text-color-primary);
+  font: var(--span);
 }
 
-
-.content-header{
+.content-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -20,6 +21,13 @@
 .flex {
   display: flex;
 }
+.f-row {
+  flex-direction: row;
+}
+.f-columns {
+  flex-direction: column;
+}
+
 .grid {
   display: grid;
 }
@@ -35,6 +43,9 @@
   gap: 0.25rem;
 }
 
+.gap-2{
+  gap: 2rem;
+}
 
 .container {
   --pp-inline: 1rem;
@@ -47,6 +58,6 @@
   .container {
     --pp-inline: 2rem;
     --max-width: 80em;
-     width: min(var(--max-width), 100% - var(--pp-inline) * 2);
+    width: min(var(--max-width), 100% - var(--pp-inline) * 2);
   }
 }
