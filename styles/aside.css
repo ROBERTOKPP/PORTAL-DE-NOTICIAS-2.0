@@ -12,3 +12,10 @@
     object-fit: cover;
   }
 }
+
+@media (width >= 80em) {
+  #aside{
+    padding-bottom: 0;
+    height: 100%;
+  }
+}
